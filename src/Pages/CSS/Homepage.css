@@ -1,47 +1,52 @@
-.homepage{
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.homepage {
     background-image: url("./background.png");
     background-repeat: repeat-y;
     background-size: cover;
     color: whitesmoke;
     padding-top: 75px;
     min-height: 100vh;
-}
-
-.homepage-title{
+  }
+  
+  .homepage-title {
     margin-left: 40.5%;
     display: flex;
-}
-
-.homepage-title h1{
+  }
+  
+  .homepage-title h1 {
     font-size: 5vh;
-}
-
-
-.homepage-intro{
+  }
+  
+  .homepage-intro {
     margin: auto;
     align-items: center;
     display: flex;
     padding: 10px;
     max-width: 70%;
     font-size: 23px;
-}
-
-.homepage-intro img{
+  }
+  
+  .homepage-intro img {
     margin: 4px 50px 4px 4px;
     border-radius: 15%;
     width: 35vh;
-}
-
-.homepage-links{
+  }
+  
+  .homepage-links {
     margin-right: 50%;
-}
-
-.homepage-links img{
+  }
+  
+  .homepage-links img {
     width: 50px;
     margin: 8px;
-}
-
-.homepage hr{
+  }
+  
+  .homepage hr {
     margin-top: 25px;
     margin-bottom: 25px;
     border: none;
@@ -49,17 +54,26 @@
     height: 3px;
     border-radius: 10px;
     background: whitesmoke;
-}
-
-.homepage-body h2{
+  }
+  
+  .homepage-body h2 {
     margin-bottom: 25px;
     font-size: 4.5vh;
   }
-
-.homepage-body-skills {
+  
+  .homepage-body-skills {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  }
+  
+  .homepage-body-skills.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out; 
   }
   
   .icons {
@@ -90,5 +104,31 @@
     padding: 0;
     display: flex;
     align-items: center;
-  }  
+  }
+
+  .homepage-certs {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
   
+  .homepage-certs.visible {
+    opacity: 1; 
+  }
+  
+  .homepage-certs li {
+    list-style-type: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .homepage-body-projects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  }
+  
+  .homepage-body-projects.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+  }  

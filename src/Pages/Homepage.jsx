@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CSS/Homepage.css'
 import profile from '../Components/Assets/profile.jpg'
@@ -10,6 +10,36 @@ import githubIcon from '../Components/Assets/github-icon.png'
 import linkedinIcon from '../Components/Assets/linkedin.png'
 
 const Homepage = () => {
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  };
+
+  useEffect(() => {
+    const options = { threshold: 0.9 };
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    const skillsElement = document.querySelector('.homepage-body-skills');
+    const projectsElement = document.querySelector('.homepage-body-projects');
+    const certElement = document.querySelector('.homepage-certs');
+
+    if (skillsElement) observer.observe(skillsElement);
+    if (projectsElement) observer.observe(projectsElement);
+    if (certElement) observer.observe(certElement);
+
+    return () => {
+      if (skillsElement) observer.unobserve(skillsElement);
+      if (projectsElement) observer.unobserve(projectsElement);
+      if (certElement) observer.unobserve(certElement);
+    };
+  }, []);
+
   return (
     <div className='homepage'>
       <head>
@@ -27,10 +57,10 @@ const Homepage = () => {
       </div>
       <div className="homepage-links">
         <Link to="https://github.com/kevinRichard1/">
-          <img src={githubIcon} />
+          <img src={githubIcon} alt=""/>
         </Link>
         <Link to="https://www.linkedin.com/in/kevin-richard-0b509928a/">
-          <img src={linkedinIcon} />
+          <img src={linkedinIcon} alt=""/>
         </Link>
       </div>
       <hr />
@@ -49,6 +79,12 @@ const Homepage = () => {
             <p>JavaScript</p>
             <p>C#</p>
           </div>
+        </div>
+        <div className="homepage-certs">
+          <h3>Certifications:</h3>
+          <ul>
+            <li>Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate</li>
+          </ul>
         </div>
         <hr />
         <h2>PROJECTS</h2>
