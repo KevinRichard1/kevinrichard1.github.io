@@ -1,0 +1,94 @@
+.homepage{
+    background-image: url("./background.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: whitesmoke;
+    padding-top: 75px;
+    min-height: 100vh;
+}
+
+.homepage-title{
+    margin-left: 40.5%;
+    display: flex;
+}
+
+.homepage-title h1{
+    font-size: 5vh;
+}
+
+
+.homepage-intro{
+    margin: auto;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    max-width: 70%;
+    font-size: 23px;
+}
+
+.homepage-intro img{
+    margin: 4px 50px 4px 4px;
+    border-radius: 15%;
+    width: 35vh;
+}
+
+.homepage-links{
+    margin-right: 50%;
+}
+
+.homepage-links img{
+    width: 50px;
+    margin: 8px;
+}
+
+.homepage hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.homepage-body h2{
+    margin-bottom: 25px;
+    font-size: 4.5vh;
+  }
+
+.homepage-body-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .icons img {
+    width: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3px;
+    padding: 0;
+  }
+  
+  .names p {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }  
+  
