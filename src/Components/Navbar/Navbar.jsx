@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className={`navbar ${scrollDirection === "up" ? "show-navbar" : "hide-navbar"}`}>
             <ul className="nav-menu">
                 <li onClick={()=>{setMenu("home")}}><NavLink style={{textDecoration: 'none'}} to = '/'>Home</NavLink>{menu === "home"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("project")}}><NavLink style={{textDecoration: 'none'}} to = '/projects'>Projects</NavLink>{menu === "projects"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("projects")}}><NavLink style={{textDecoration: 'none'}} to = '/projects'>Projects</NavLink>{menu === "projects"?<hr/>:<></>}</li>
             </ul>
         </div>
     )
