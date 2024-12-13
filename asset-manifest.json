@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.a852ddf4.css",
-    "main.js": "/react-gh-pages/static/js/main.4824d73f.js",
-    "static/media/background.png": "/react-gh-pages/static/media/background.339c0b2045d8aa01de30.png",
-    "static/media/java-icon.png": "/react-gh-pages/static/media/java-icon.5ee60470d0569736baf6.png",
-    "static/media/cSharp-icon.png": "/react-gh-pages/static/media/cSharp-icon.2fb642b3f650f3e75f38.png",
-    "static/media/github-icon.png": "/react-gh-pages/static/media/github-icon.d2fe757d71e0514debea.png",
-    "static/media/python-icon.png": "/react-gh-pages/static/media/python-icon.1d156b5d2984e3844d91.png",
-    "static/media/javascript-icon.png": "/react-gh-pages/static/media/javascript-icon.bd76a2451309a74c98b3.png",
-    "static/media/linkedin.png": "/react-gh-pages/static/media/linkedin.869deb105cbcb6280c6a.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.a852ddf4.css.map": "/react-gh-pages/static/css/main.a852ddf4.css.map",
-    "main.4824d73f.js.map": "/react-gh-pages/static/js/main.4824d73f.js.map"
+    "main.css": "/static/css/main.98458c6d.css",
+    "main.js": "/static/js/main.64f34c3e.js",
+    "static/media/background.png": "/static/media/background.339c0b2045d8aa01de30.png",
+    "static/media/java-icon.png": "/static/media/java-icon.5ee60470d0569736baf6.png",
+    "static/media/cSharp-icon.png": "/static/media/cSharp-icon.2fb642b3f650f3e75f38.png",
+    "static/media/github-icon.png": "/static/media/github-icon.d2fe757d71e0514debea.png",
+    "static/media/python-icon.png": "/static/media/python-icon.1d156b5d2984e3844d91.png",
+    "static/media/javascript-icon.png": "/static/media/javascript-icon.bd76a2451309a74c98b3.png",
+    "static/media/linkedin.png": "/static/media/linkedin.869deb105cbcb6280c6a.png",
+    "index.html": "/index.html",
+    "main.98458c6d.css.map": "/static/css/main.98458c6d.css.map",
+    "main.64f34c3e.js.map": "/static/js/main.64f34c3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a852ddf4.css",
-    "static/js/main.4824d73f.js"
+    "static/css/main.98458c6d.css",
+    "static/js/main.64f34c3e.js"
   ]
 }
