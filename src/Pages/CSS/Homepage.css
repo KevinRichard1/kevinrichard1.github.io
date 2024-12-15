@@ -11,10 +11,13 @@ html, body {
     color: whitesmoke;
     padding-top: 75px;
     min-height: 100vh;
+    display: flex;
+   flex-direction: column;
+
   }
   
   .homepage-title {
-    margin-left: 40.5%;
+    margin-left: 42.8%;
     display: flex;
   }
   
@@ -59,6 +62,7 @@ html, body {
   .homepage-body h2 {
     margin-bottom: 25px;
     font-size: 4.5vh;
+    text-decoration: underline;
   }
   
   .homepage-body-skills {

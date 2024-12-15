@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Homepage from './Pages/Homepage';
 import Project from './Pages/Project';
+import { Footer } from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path ='/' element={<Homepage/>}/>
           <Route path ='/projects' element={<Project/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

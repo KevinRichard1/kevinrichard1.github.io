@@ -26,17 +26,17 @@ const Homepage = () => {
     const observer = new IntersectionObserver(handleIntersection, options);
 
     const skillsElement = document.querySelector('.homepage-body-skills');
-    const projectsElement = document.querySelector('.homepage-body-projects');
     const certElement = document.querySelector('.homepage-certs');
+    const projectsElement = document.querySelector('.homepage-body-projects');
 
     if (skillsElement) observer.observe(skillsElement);
-    if (projectsElement) observer.observe(projectsElement);
     if (certElement) observer.observe(certElement);
+    if (projectsElement) observer.observe(projectsElement);
 
     return () => {
       if (skillsElement) observer.unobserve(skillsElement);
-      if (projectsElement) observer.unobserve(projectsElement);
       if (certElement) observer.unobserve(certElement);
+      if (projectsElement) observer.unobserve(projectsElement);
     };
   }, []);
 
@@ -47,7 +47,6 @@ const Homepage = () => {
       </head>
       <div className="homepage-title">
         <h1>Hello World!</h1>
-        <h1>👋</h1>
       </div>
       <div className='homepage-intro'>
         <img src={profile} alt="" />
@@ -65,7 +64,7 @@ const Homepage = () => {
       </div>
       <hr />
       <div className='homepage-body'>
-        <h2>SKILLS</h2>
+        <h2>Skills</h2>
         <div className='homepage-body-skills'>
           <div className="icons">
             <img src={pythonIcon} alt="" />
@@ -87,12 +86,13 @@ const Homepage = () => {
           </ul>
         </div>
         <hr />
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
         <div className="homepage-body-projects">
           <p>Project 1</p>
           <p>Project 2</p>
           <p>Project 3</p>
         </div>
+        <hr />
       </div>
     </div>
   )
