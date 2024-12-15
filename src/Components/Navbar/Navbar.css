@@ -7,6 +7,15 @@
     left: 0;
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 39%;
+  }
+
+  .navbar img{
+    width: 40px;
+    margin-left: 2%;
   }
   
   .show-navbar {

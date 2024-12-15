@@ -1,6 +1,7 @@
 import './Navbar.css'
 import React, { useState, useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../Assets/favicon.png'
 
 const Navbar = () => {
     const [menu, setMenu] = useState("home");
@@ -24,6 +25,7 @@ const Navbar = () => {
 
     return (
         <div className={`navbar ${scrollDirection === "up" ? "show-navbar" : "hide-navbar"}`}>
+            <img src={logo} alt="" />
             <ul className="nav-menu">
                 <li onClick={()=>{setMenu("home")}}><NavLink style={{textDecoration: 'none'}} to = '/'>Home</NavLink>{menu === "home"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("projects")}}><NavLink style={{textDecoration: 'none'}} to = '/projects'>Projects</NavLink>{menu === "projects"?<hr/>:<></>}</li>
