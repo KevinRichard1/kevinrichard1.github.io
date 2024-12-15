@@ -41,7 +41,7 @@ html, body {
   }
   
   .homepage-links {
-    margin-right: 50%;
+    margin-right: 50vw;
   }
   
   .homepage-links img {
@@ -136,3 +136,66 @@ html, body {
     visibility: visible;
     transition: opacity 0.5s ease-in-out;
   }  
+
+  @media(max-width:480px){
+    .homepage{
+      align-items: center;
+    }
+
+    .homepage-title{
+      margin-right: 26.5%;
+      width: 80%;
+    }    
+
+    .homepage-title h1{
+      font-size: 5vh;
+    }
+
+    .homepage-intro {
+      margin: auto;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      max-width: 100%;
+      font-size: 16px;
+    }
+    
+    .homepage-intro img {
+      margin: 4px;
+      border-radius: 15%;
+      width: 20vh;
+    }
+
+    .homepage-links{
+      margin: 0px;
+    }
+
+    .homepage-links img{
+      width: 4vh;
+    }
+
+    .homepage hr{
+      margin-top: 20px;
+    }
+
+    .homepage-body{
+      margin-top: -30px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .homepage-body h2{
+      font-size: 35px;
+    }
+
+    .homepage-certs{
+      font-size: 18px;
+      width: 100%;
+    }
+
+    .homepage-certs li{
+      margin-left: -35px;
+    }
+  }

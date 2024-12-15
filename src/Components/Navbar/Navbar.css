@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 39%;
+    gap: 38.4%;
     border-bottom: 2px groove #cc9b4c;
   }
 
@@ -67,3 +67,12 @@
     margin: 0;
   }
   
+  @media(max-width:480px){
+    .navbar{
+      gap: 8%;
+    }
+
+    .navbar img{
+      margin-left: 3%;
+    }
+  }
