@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.98458c6d.css",
-    "main.js": "/static/js/main.64f34c3e.js",
+    "main.css": "/static/css/main.74f1dd95.css",
+    "main.js": "/static/js/main.6eb81f63.js",
     "static/media/background.png": "/static/media/background.339c0b2045d8aa01de30.png",
     "static/media/java-icon.png": "/static/media/java-icon.5ee60470d0569736baf6.png",
     "static/media/cSharp-icon.png": "/static/media/cSharp-icon.2fb642b3f650f3e75f38.png",
     "static/media/github-icon.png": "/static/media/github-icon.d2fe757d71e0514debea.png",
     "static/media/python-icon.png": "/static/media/python-icon.1d156b5d2984e3844d91.png",
+    "static/media/favicon.png": "/static/media/favicon.e5f6e60fcaa3120d19cf.png",
     "static/media/javascript-icon.png": "/static/media/javascript-icon.bd76a2451309a74c98b3.png",
     "static/media/linkedin.png": "/static/media/linkedin.869deb105cbcb6280c6a.png",
     "index.html": "/index.html",
-    "main.98458c6d.css.map": "/static/css/main.98458c6d.css.map",
-    "main.64f34c3e.js.map": "/static/js/main.64f34c3e.js.map"
+    "main.74f1dd95.css.map": "/static/css/main.74f1dd95.css.map",
+    "main.6eb81f63.js.map": "/static/js/main.6eb81f63.js.map"
   },
   "entrypoints": [
-    "static/css/main.98458c6d.css",
-    "static/js/main.64f34c3e.js"
+    "static/css/main.74f1dd95.css",
+    "static/js/main.6eb81f63.js"
   ]
 }
