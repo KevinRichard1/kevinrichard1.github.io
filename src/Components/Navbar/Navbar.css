@@ -2,6 +2,7 @@
     background-color: #234359;
     padding: 1px 0;
     position: fixed;
+    height: 60px;
     width: 100%;
     top: 0;
     left: 0;
@@ -11,6 +12,7 @@
     flex-direction: row;
     align-items: center;
     gap: 39%;
+    border-bottom: 2px groove #cc9b4c;
   }
 
   .navbar img{
