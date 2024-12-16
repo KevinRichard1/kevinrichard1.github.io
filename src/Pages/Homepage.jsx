@@ -51,7 +51,7 @@ const Homepage = () => {
       <div className='homepage-intro'>
         <img src={profile} alt="" />
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hi! I’m Kevin Richard, a junior at the University of North Carolina at Charlotte studying Computer Science, with a passion for machine learning and software development. I’ve worked on projects in a variety of fields where I’ve combined creativity and technical skills to solve real-world challenges.
           </p>
       </div>
       <div className="homepage-links">
@@ -88,9 +88,14 @@ const Homepage = () => {
         <hr />
         <h2>Projects</h2>
         <div className="homepage-body-projects">
-          <p>Project 1</p>
-          <p>Project 2</p>
-          <p>Project 3</p>
+          <div className="homepage-body-projects-text">
+            <Link to="/projects#hackclt" className='projects-links'>Earnings Call Analysis: </Link>
+            <p>A web application for real-time sentiment analysis during an Earnings Call.</p>
+          </div>
+          <div className="homepage-body-projects-text">
+            <Link to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </Link>
+            <p>An autonomous delivery robot built in collaboration with UNC Charlotte's AI Research Club.</p>
+          </div>
         </div>
         <hr />
       </div>

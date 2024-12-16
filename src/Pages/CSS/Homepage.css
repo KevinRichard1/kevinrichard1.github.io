@@ -5,137 +5,175 @@ html, body {
   }
 
 .homepage {
-    background-image: url("./background.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-    color: whitesmoke;
-    padding-top: 75px;
-    min-height: 100vh;
-    display: flex;
-   flex-direction: column;
+  background-image: url("./background.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  color: whitesmoke;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  }
-  
-  .homepage-title {
-    margin-left: 42.8%;
-    display: flex;
-  }
-  
-  .homepage-title h1 {
-    font-size: 5vh;
-  }
-  
-  .homepage-intro {
-    margin: auto;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    max-width: 70%;
-    font-size: 23px;
-  }
-  
-  .homepage-intro img {
-    margin: 4px 50px 4px 4px;
-    border-radius: 15%;
-    width: 35vh;
-  }
-  
-  .homepage-links {
-    margin-right: 50vw;
-  }
-  
-  .homepage-links img {
-    width: 50px;
-    margin: 8px;
-  }
-  
-  .homepage hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: whitesmoke;
-  }
-  
-  .homepage-body h2 {
-    margin-bottom: 25px;
-    font-size: 4.5vh;
-    text-decoration: underline;
-  }
-  
-  .homepage-body-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-  }
-  
-  .homepage-body-skills.visible {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out; 
-  }
-  
-  .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 15px;
-  }
-  
-  .icons img {
-    width: 30px;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .names {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 3px;
-    padding: 0;
-  }
-  
-  .names p {
-    font-size: 20px;
-    margin-top: 7px;
-    margin-bottom: 15px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+}
 
-  .homepage-certs {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .homepage-certs.visible {
-    opacity: 1; 
-  }
-  
-  .homepage-certs li {
-    list-style-type: none;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .homepage-body-projects {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-  }
+.homepage-title {
+  display: flex;
+  font-family: monospace;
+  margin: 0 auto;
+}
 
-  .homepage-body-projects.visible {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out;
-  }  
+.homepage-title h1 {
+  font-size: 5vh;
+  overflow: hidden;
+  border-right: .1em solid #cc9b4c;
+  white-space: nowrap;
+  letter-spacing: .1em;
+  animation: 
+    typing 2s steps(40, end) 1,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #cc9b4c; }
+}
+
+.homepage-intro {
+  margin: auto;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  max-width: 70%;
+  font-size: 23px;
+}
+
+.homepage-intro img {
+  margin: 4px 50px 4px 4px;
+  border-radius: 75%;
+  width: 35vh;
+}
+
+.homepage-links {
+  margin-right: 50vw;
+}
+
+.homepage-links img {
+  width: 50px;
+  margin: 8px;
+}
+
+.homepage hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: whitesmoke;
+}
+
+.homepage-body h2 {
+  margin-bottom: 25px;
+  font-size: 4.5vh;
+  text-decoration: underline;
+}
+
+.homepage-body-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.homepage-body-skills.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.icons img {
+  width: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.names p {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-certs {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.homepage-certs.visible {
+  opacity: 1; 
+}
+
+.homepage-certs li {
+  list-style-type: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.homepage-body-projects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.homepage-body-projects.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}  
+
+.homepage-body-projects-text{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+.projects-links{
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.projects-links:hover{
+  color: #cc9b4c;
+  font-weight: 600;
+}
 
   @media(max-width:480px){
     .homepage{
@@ -143,7 +181,7 @@ html, body {
     }
 
     .homepage-title{
-      margin-right: 26.5%;
+      margin: auto;
       width: 80%;
     }    
 
@@ -197,5 +235,18 @@ html, body {
 
     .homepage-certs li{
       margin-left: -35px;
+    }
+
+    .homepage-body-projects-text{
+      flex-direction: column;
+      width: 92%;
+    }
+
+    .homepage-body-projects-text p{
+      margin-bottom: 40px;
+    }
+
+    .projects-links{
+      margin-bottom: -20px;
     }
   }

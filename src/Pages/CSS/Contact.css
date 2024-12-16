@@ -1,0 +1,11 @@
+.contact {
+    background-image: url("./background.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: whitesmoke;
+    padding-top: 75px;
+    min-height: 100vh;
+    display: flex;
+   flex-direction: column;
+
+  }
