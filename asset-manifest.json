@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.63735f5d.css",
-    "main.js": "/static/js/main.6eb81f63.js",
+    "main.css": "/static/css/main.9bbda112.css",
+    "main.js": "/static/js/main.9b1a2935.js",
     "static/media/background.png": "/static/media/background.339c0b2045d8aa01de30.png",
+    "static/media/profile.jpg": "/static/media/profile.c6d050f689e7bab0cd12.jpg",
+    "static/media/scoutmini.png": "/static/media/scoutmini.fd884cece2a822295bae.png",
+    "static/media/hackclt24.jpg": "/static/media/hackclt24.c7bc7dc5b0eb2916d19d.jpg",
     "static/media/java-icon.png": "/static/media/java-icon.5ee60470d0569736baf6.png",
     "static/media/cSharp-icon.png": "/static/media/cSharp-icon.2fb642b3f650f3e75f38.png",
     "static/media/github-icon.png": "/static/media/github-icon.d2fe757d71e0514debea.png",
@@ -11,11 +14,11 @@
     "static/media/javascript-icon.png": "/static/media/javascript-icon.bd76a2451309a74c98b3.png",
     "static/media/linkedin.png": "/static/media/linkedin.869deb105cbcb6280c6a.png",
     "index.html": "/index.html",
-    "main.63735f5d.css.map": "/static/css/main.63735f5d.css.map",
-    "main.6eb81f63.js.map": "/static/js/main.6eb81f63.js.map"
+    "main.9bbda112.css.map": "/static/css/main.9bbda112.css.map",
+    "main.9b1a2935.js.map": "/static/js/main.9b1a2935.js.map"
   },
   "entrypoints": [
-    "static/css/main.63735f5d.css",
-    "static/js/main.6eb81f63.js"
+    "static/css/main.9bbda112.css",
+    "static/js/main.9b1a2935.js"
   ]
 }
