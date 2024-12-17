@@ -59,7 +59,7 @@ html, body {
 }
 
 .homepage-links {
-  margin-right: 50vw;
+  margin-right: 51%;
 }
 
 .homepage-links img {
@@ -165,12 +165,12 @@ html, body {
   justify-content: center;
 }
 
-.projects-links{
+
+.homepage-body-projects Link{
   color: whitesmoke;
-  font-weight: 600;
 }
 
-.projects-links:hover{
+.homepage-body-projects Link:hover{
   color: #cc9b4c;
   font-weight: 600;
 }

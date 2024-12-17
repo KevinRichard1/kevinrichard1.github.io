@@ -37,7 +37,6 @@ const Navbar = ({ setMenuStatus }) => {
       <ul className="nav-menu">
         <li onClick={() => { setMenu("home"); }}><NavLink style={{ textDecoration: 'none' }} to='/'>Home</NavLink>{menu === "home" ? <hr /> : <></>}</li>
         <li onClick={() => { setMenu("projects"); }}><NavLink style={{ textDecoration: 'none' }} to='/projects'>Projects</NavLink>{menu === "projects" ? <hr /> : <></>}</li>
-        <li onClick={() => { setMenu("contact"); }}><NavLink style={{ textDecoration: 'none' }} to='/contact'>Contact</NavLink>{menu === "contact" ? <hr /> : <></>}</li>
       </ul>
       <div className={`navbar-dropdown ${menuOpen ? 'change' : ''}`} onClick={toggleMenu}>
         <div className="bar1"></div>

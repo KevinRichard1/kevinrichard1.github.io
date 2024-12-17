@@ -5,7 +5,6 @@ import './App.css';
 import Homepage from './Pages/Homepage';
 import Project from './Pages/Project';
 import { Footer } from './Components/Footer/Footer';
-import Contact from './Pages/Contact';
 import Sidebar from './Components/Navbar/Sidebar';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route path ='/' element={<Homepage/>}/>
           <Route path ='/projects' element={<Project/>}/>
-          <Route path ='/contact' element={<Contact/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

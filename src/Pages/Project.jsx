@@ -51,7 +51,7 @@ const Project = () => {
         <h1>Projects</h1>
         <div id="hackclt" className='hackclt' ref={ref}>
           <div className="hackclt-text">
-            <Link to="https://github.com/TheBraveChicken4/EarningsReaderHackCLT" className='projects-links'>Earnings Call Analysis</Link>
+            <Link to="https://github.com/TheBraveChicken4/EarningsReaderHackCLT" className='projects-links'>Earnings Call Analysis 🔗</Link>
             <ul>
               <li>Won 1st place at Hack CLT 24, showcasing innovation in real-time financial data analysis.</li>
               <li>Developed a responsive earnings call analysis web app using React and Node.js/Express.</li>
@@ -63,7 +63,7 @@ const Project = () => {
         <hr />
         <div className="deliveryrobot" id="deliveryrobot" ref={ref}>
           <div className="deliveryrobot-text">
-            <Link to="https://github.com/KevinRichard1/scout-sim" className='projects-links'>Autonomous Delivery Robot</Link>
+            <Link to="https://github.com/KevinRichard1/scout-sim" className='projects-links'>Autonomous Delivery Robot 🔗</Link>
             <ul>
               <li>Collaborated with the Charlotte AI Research club on the development of an autonomous delivery robot, integrating SLAM for precise navigation and environmental mapping using Nav2, Google Cartographer, and GazeboSim.</li>
               <li>Oversaw migration of AgileX Scout Mini codebase for ROS2 compatability.</li>

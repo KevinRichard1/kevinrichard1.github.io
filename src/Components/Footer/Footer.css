@@ -4,3 +4,12 @@
     color: whitesmoke;
     border-top: 2px ridge #cc9b4c;
   }
+
+  .footer a{
+    color: whitesmoke;
+  }
+  
+  .footer a:hover{
+    color: #cc9b4c;
+    font-weight: 600;
+  }
