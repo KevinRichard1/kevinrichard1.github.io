@@ -14,6 +14,11 @@ const Navbar = ({ setMenuStatus, isMenuOpen }) => {
     setMenuStatus(prevState => !prevState);
   };
 
+  const handleLogoClick = () => {
+    setMenu("home");
+    setMenuStatus(false);
+  };
+
   useEffect(() => {
     setMenuOpen(isMenuOpen);
   }, [isMenuOpen]);
@@ -36,7 +41,7 @@ const Navbar = ({ setMenuStatus, isMenuOpen }) => {
   return (
     <div className={`navbar ${scrollDirection === "up" ? "show-navbar" : "hide-navbar"}`}>
       <NavLink to="/" className='navbar-logo'>
-        <img src={logo} alt="" />
+        <img src={logo} alt="" onClick={handleLogoClick} />
       </NavLink>
       <ul className="nav-menu">
         <li onClick={() => { setMenu("home"); }}><NavLink style={{ textDecoration: 'none' }} to='/'>Home</NavLink>{menu === "home" ? <hr /> : <></>}</li>

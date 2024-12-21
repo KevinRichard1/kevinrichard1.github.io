@@ -1,9 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
 .homepage {
   background-image: url("./background.png");
   background-repeat: repeat-y;
@@ -59,7 +53,7 @@ html, body {
 }
 
 .homepage-links {
-  margin-right: 54vw;
+  margin-right: 53vw;
 }
 
 .homepage-links img {
@@ -175,78 +169,247 @@ html, body {
   font-weight: 600;
 }
 
-  @media(max-width:480px){
-    .homepage{
-      align-items: center;
-    }
-
-    .homepage-title{
-      margin: auto;
-      width: 80%;
-    }    
-
-    .homepage-title h1{
-      font-size: 5vh;
-    }
-
-    .homepage-intro {
-      margin: auto;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      max-width: 100%;
-      font-size: 16px;
-    }
-    
-    .homepage-intro img {
-      margin: 4px;
-      border-radius: 15%;
-      width: 20vh;
-    }
-
-    .homepage-links{
-      margin: 0px;
-    }
-
-    .homepage-links img{
-      width: 4vh;
-    }
-
-    .homepage hr{
-      margin-top: 20px;
-    }
-
-    .homepage-body{
-      margin-top: -30px;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-
-    .homepage-body h2{
-      font-size: 35px;
-    }
-
-    .homepage-certs{
-      font-size: 18px;
-      width: 100%;
-    }
-
-    .homepage-certs li{
-      margin-left: -35px;
-    }
-
-    .homepage-body-projects-text{
-      flex-direction: column;
-      width: 92%;
-    }
-
-    .homepage-body-projects-text p{
-      margin-bottom: 40px;
-    }
-
-    .projects-links{
-      margin-bottom: -20px;
-    }
+@media(max-width: 1024px) {
+  .homepage {
+    align-items: center;
   }
+
+  .homepage-title {
+    display: flex;
+    margin: auto;
+    width: 80%;
+  }
+
+  .homepage-title h1 {
+    margin-left: 24vw;
+    font-size: 5vh;
+  }
+
+  .homepage-intro {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 80%;
+    font-size: 20px;
+  }
+
+  .homepage-intro img {
+    margin: 4px;
+    border-radius: 15%;
+    width: 25vh;
+    margin-bottom: 2vh;
+  }
+
+  .homepage-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 51vw;
+    margin-top: 1.5vh;
+  }
+
+  .homepage-links img {
+    width: 4vh;
+  }
+
+  .homepage hr {
+    margin-top: 20px;
+  }
+
+  .homepage-body {
+    margin-top: -30px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homepage-body h2 {
+    font-size: 35px;
+  }
+
+  .homepage-certs {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .homepage-certs li {
+    margin-left: -35px;
+  }
+
+  .homepage-body-projects-text {
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .homepage-body-projects-text p {
+    margin-bottom: 40px;
+  }
+
+  .projects-links {
+    margin-bottom: -20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .homepage {
+    align-items: center;
+  }
+
+  .homepage-title {
+    display: flex;
+    margin: auto;
+    width: 80%;
+  }
+
+  .homepage-title h1 {
+    margin-left: 20vw;
+    font-size: 5vh;
+  }
+
+  .homepage-intro {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 80%;
+    font-size: 16px;
+  }
+
+  .homepage-intro img {
+    margin: 4px;
+    border-radius: 15%;
+    width: 20vh;
+    margin-bottom: 2vh;
+  }
+
+  .homepage-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.5vw;
+    margin-top: 1.5vh;
+  }
+
+  .homepage-links img {
+    width: 4vh;
+  }
+
+  .homepage hr {
+    margin-top: 20px;
+  }
+
+  .homepage-body {
+    margin-top: -30px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homepage-body h2 {
+    font-size: 35px;
+  }
+
+  .homepage-certs {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .homepage-certs li {
+    margin-left: -35px;
+  }
+
+  .homepage-body-projects-text {
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .homepage-body-projects-text p {
+    margin-bottom: 40px;
+  }
+
+  .projects-links {
+    margin-bottom: -20px;
+  }
+}
+
+@media(max-width:480px){
+  .homepage{
+    align-items: center;
+  }
+
+  .homepage-title{
+    margin: auto;
+    width: 80%;
+  }    
+
+  .homepage-title h1{
+    margin-left: 7vw;
+    font-size: 4.5vh;
+  }
+
+  .homepage-intro {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  .homepage-intro img {
+    margin: 4px;
+    border-radius: 15%;
+    width: 20vh;
+    margin-bottom: 2vh;
+  }
+
+  .homepage-links{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.5vw;
+    margin-top: 1.5vh;
+  }
+
+  .homepage-links img{
+    width: 4vh;
+  }
+
+  .homepage hr{
+    margin-top: 20px;
+  }
+
+  .homepage-body{
+    margin-top: -30px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homepage-body h2{
+    font-size: 35px;
+  }
+
+  .homepage-certs{
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .homepage-certs li{
+    margin-left: -35px;
+  }
+
+  .homepage-body-projects-text{
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .homepage-body-projects-text p{
+    margin-bottom: 40px;
+  }
+
+  .projects-links{
+    margin-bottom: -20px;
+  }
+}

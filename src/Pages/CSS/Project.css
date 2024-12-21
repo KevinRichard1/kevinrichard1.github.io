@@ -76,13 +76,55 @@ html, body {
   width: 25%;
 }
 
+@media(max-width:1024px){
+  .hackclt{
+    margin-left: 2vw;
+  }
+  
+  .hackclt img{
+    margin-right: 2vw;
+  }
+
+  .deliveryrobot{
+    margin-left: 2vw;
+  }
+
+  .deliveryrobot img{
+    margin-right: 2vw;
+  }
+}
+
+@media(max-width:768px){
+  .hackclt{
+    margin-left: 2vw;
+  }
+  
+  .hackclt img{
+    margin-right: 2vw;
+  }
+
+  .deliveryrobot{
+    margin-left: 2vw;
+  }
+
+  .deliveryrobot img{
+    margin-right: 2vw;
+  }
+}
+
 @media(max-width:480px){
   .hackclt{
     flex-direction: column;
     margin-right: 40px;
+    margin-left: 5vw;
+  }
+
+  .hackclt ul li{
+    margin-top: 15px;
   }
 
   .hackclt img{
+    margin-left: 8vw;
     width: 75%;
   }
 
@@ -90,14 +132,19 @@ html, body {
     margin-top: 0px;
     margin-right: 40px;
     flex-direction: column;
+    margin-left: 5vw;
   }
 
   .deliveryrobot-text{
     width: 100%;
-    
+  }
+
+  .deliveryrobot ul li{
+    margin-top: 15px;
   }
 
   .deliveryrobot img{
     width: 75%;
+    margin-left: 8vw;
   }
 }
