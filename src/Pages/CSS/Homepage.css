@@ -59,11 +59,12 @@ html, body {
 }
 
 .homepage-links {
-  margin-right: 50vw;
+  margin-right: 54vw;
 }
 
 .homepage-links img {
   width: 50px;
+  margin-left: 20px;
 }
 
 .homepage hr {
