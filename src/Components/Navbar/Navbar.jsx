@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../Assets/favicon.png';
 
 const Navbar = ({ setMenuStatus, isMenuOpen }) => {
+  const [menu, setMenu] = useState("home");
   const [scrollDirection, setScrollDirection] = useState("up");
   const lastScrollTop = useRef(0);
   const [menuOpen, setMenuOpen] = useState(isMenuOpen);
@@ -37,6 +38,10 @@ const Navbar = ({ setMenuStatus, isMenuOpen }) => {
       <NavLink to="/" className='navbar-logo'>
         <img src={logo} alt="" />
       </NavLink>
+      <ul className="nav-menu">
+        <li onClick={() => { setMenu("home"); }}><NavLink style={{ textDecoration: 'none' }} to='/'>Home</NavLink>{menu === "home" ? <hr /> : <></>}</li>
+        <li onClick={() => { setMenu("projects"); }}><NavLink style={{ textDecoration: 'none' }} to='/projects'>Projects</NavLink>{menu === "projects" ? <hr /> : <></>}</li>
+      </ul>
       <div className={`navbar-dropdown ${menuOpen ? 'change' : ''}`} onClick={toggleMenu}>
         <div className="bar1"></div>
         <div className="bar2"></div>

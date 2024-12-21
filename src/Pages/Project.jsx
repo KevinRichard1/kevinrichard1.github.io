@@ -5,30 +5,31 @@ import hackclt24 from '../Components/Assets/hackclt24.jpg'
 import scoutmini from '../Components/Assets/scoutmini.png'
 
 const Project = () => {
-  const ref = useRef(null);
+  const hackcltRef = useRef(null);
+  const deliveryrobotRef = useRef(null);
 
+  // Effect to handle the scrolling behavior when the hash changes or the component is loaded
   useEffect(() => {
     const scrollToSection = () => {
       const hash = window.location.hash;
-      if (hash === '#hackclt' && ref.current) {
-        const element = ref.current;
-        
-        const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
-        
-        const offset = 100;
 
-        window.scrollTo({
-          top: elementTop - offset,
-          behavior: 'smooth',
-        });
+      let targetElement = null;
+
+      // Determine the target section based on the current hash
+      if (hash === '#hackclt') {
+        targetElement = hackcltRef.current;
+      } else if (hash === '#deliveryrobot') {
+        targetElement = deliveryrobotRef.current;
       }
-      if (hash === '#deliveryrobot' && ref.current) {
-        const element = ref.current;
+
+      if (targetElement) {
+        // Get the position of the target element
+        const elementTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
         
-        const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
-        
+        // Define an offset (adjust as needed)
         const offset = 100;
 
+        // Perform the scroll to the target position with smooth behavior
         window.scrollTo({
           top: elementTop - offset,
           behavior: 'smooth',
@@ -36,20 +37,23 @@ const Project = () => {
       }
     };
 
+    // Call the function to scroll immediately after component mounts
     scrollToSection();
 
+    // Monitor hash changes and trigger scroll when the hash changes
     window.addEventListener('hashchange', scrollToSection);
 
+    // Cleanup the event listener on unmount
     return () => {
       window.removeEventListener('hashchange', scrollToSection);
     };
-  }, []); 
+  }, []);
 
 
   return (
     <div className='projects'> 
         <h1>Projects</h1>
-        <div id="hackclt" className='hackclt' ref={ref}>
+        <div id="hackclt" className='hackclt' ref={hackcltRef}>
           <div className="hackclt-text">
             <Link to="https://github.com/TheBraveChicken4/EarningsReaderHackCLT" className='projects-links'>Earnings Call Analysis 🔗</Link>
             <ul>
@@ -61,7 +65,7 @@ const Project = () => {
           <img src={hackclt24} alt="" />
         </div>
         <hr />
-        <div className="deliveryrobot" id="deliveryrobot" ref={ref}>
+        <div className="deliveryrobot" id="deliveryrobot" ref={deliveryrobotRef}>
           <div className="deliveryrobot-text">
             <Link to="https://github.com/KevinRichard1/scout-sim" className='projects-links'>Autonomous Delivery Robot 🔗</Link>
             <ul>
