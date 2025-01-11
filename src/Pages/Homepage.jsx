@@ -82,6 +82,7 @@ const Homepage = () => {
         <div className="homepage-certs">
           <h3>Certifications:</h3>
           <ul>
+            <li>AWS Certified Cloud Practitioner</li>
             <li>Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate</li>
           </ul>
         </div>

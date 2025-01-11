@@ -70,7 +70,7 @@ const Project = () => {
             <Link to="https://github.com/KevinRichard1/scout-sim" className='projects-links'>Autonomous Delivery Robot 🔗</Link>
             <ul>
               <li>Collaborated with the Charlotte AI Research club on the development of an autonomous delivery robot, integrating SLAM for precise navigation and environmental mapping using Nav2, Google Cartographer, and GazeboSim.</li>
-              <li>Oversaw migration of AgileX Scout Mini codebase for ROS2 compatability.</li>
+              <li>Migrated AgileX Scout Mini codebase for ROS2 compatability.</li>
               <li>Implemented YOLOv8-based object detection for collision avoidance and dynamic path planning.</li>
             </ul>
           </div>
