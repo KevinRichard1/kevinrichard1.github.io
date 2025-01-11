@@ -22,7 +22,7 @@ const Homepage = () => {
   };
 
   useEffect(() => {
-    const options = { threshold: 0.9 };
+    const options = { threshold: 0.92 };
     const observer = new IntersectionObserver(handleIntersection, options);
 
     const skillsElement = document.querySelector('.homepage-body-skills');
