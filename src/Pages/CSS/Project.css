@@ -1,33 +1,30 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-.projects{
-    background: #234359;
-    background-image: url("./background.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-    color: whitesmoke;
-    padding-top: 75px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.projects { 
+  background-color: #234359;
+  opacity: 1;
+  background-image:  radial-gradient(#cc9b4c 1.55px, transparent 1.55px), radial-gradient(#cc9b4c 1.55px, #234359 1.55px);
+  background-size: 62px 62px;
+  background-position: 0 0,31px 31px;
+  color: whitesmoke;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .projects h1 {
   margin: 0 auto;
   font-size: 5vh;
   text-decoration: underline;
+  color: #cc9b4c;
 }
 
-.projects-links{
+.projects-links {
   color: whitesmoke;
   font-weight: 600;
 }
 
-.projects-links:hover{
+.projects-links:hover {
   color: #cc9b4c;
   font-weight: 600;
 }
@@ -39,8 +36,9 @@ html, body {
   width: 80%;
   height: 3px;
   border-radius: 10px;
-  background: whitesmoke;
+  background: #cc9b4c;
 }
+
 
 .hackclt{
   margin-top: 30px;
