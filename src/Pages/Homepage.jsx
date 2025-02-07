@@ -58,7 +58,7 @@ const Homepage = () => {
         <Link to="https://github.com/kevinRichard1/">
           <img src={githubIcon} alt=""/>
         </Link>
-        <Link to="https://www.linkedin.com/in/kevin-richard-0b509928a/">
+        <Link to="https://www.linkedin.com/in/kevin-richard-cs/">
           <img src={linkedinIcon} alt=""/>
         </Link>
       </div>
