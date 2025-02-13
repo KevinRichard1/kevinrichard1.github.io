@@ -51,7 +51,7 @@ const Homepage = () => {
       <div className='homepage-intro'>
         <img src={profile} alt="" />
           <p>
-          Hi! I’m Kevin Richard, a junior at the University of North Carolina at Charlotte studying Computer Science, with a passion for machine learning and software development. I’ve worked on projects in a variety of fields where I’ve combined creativity and technical skills to solve real-world challenges.
+          Hi! I’m Kevin Richard, a student at the University of North Carolina at Charlotte studying Computer Science, with a passion for machine learning and software development. I’ve worked on projects in a variety of fields where I’ve combined creativity and technical skills to solve real-world challenges.
           </p>
       </div>
       <div className="homepage-links">
