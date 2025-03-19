@@ -40,12 +40,13 @@
 
 
 .hackclt{
-  margin-top: 30px;
   margin-left: 8%;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  padding-top: 8vh
 }
 
 .hackclt-text{
@@ -57,12 +58,13 @@
 }
 
 .deliveryrobot{
-  margin-top: 10px;
   margin-left: 8%;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  padding-top: 8vh
 }
 
 .deliveryrobot-text{
@@ -75,12 +77,13 @@
 }
 
 .siteblocker{
-  margin-top: 10px;
   margin-left: 8%;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  padding-top: 8vh
 }
 
 .siteblocker-text{
@@ -148,8 +151,10 @@
 @media(max-width:480px){
   .hackclt{
     flex-direction: column;
-    margin-right: 40px;
     margin-left: 5vw;
+    margin-right: 40px;
+    margin-bottom: 5vw;
+    padding-top: 9vh
   }
 
   .hackclt-text{
@@ -166,10 +171,11 @@
   }
 
   .deliveryrobot{
-    margin-top: 0px;
-    margin-right: 40px;
     flex-direction: column;
     margin-left: 5vw;
+    margin-right: 40px;
+    margin-bottom: 5vw;
+    padding-top: 4vh
   }
 
   .deliveryrobot-text{
@@ -186,10 +192,11 @@
   }
 
   .siteblocker{
-    margin-top: 0px;
-    margin-right: 40px;
     flex-direction: column;
     margin-left: 5vw;
+    margin-right: 40px;
+    margin-bottom: 5vw;
+    padding-top: 4vh
   }
 
   .siteblocker-text{

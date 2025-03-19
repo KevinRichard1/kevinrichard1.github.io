@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import './CSS/Homepage.css'
 import profile from '../Components/Assets/profile.jpg'
 import pythonIcon from '../Components/Assets/python-icon.png'
@@ -98,15 +99,15 @@ const Homepage = () => {
         <h2>Projects</h2>
         <div className="homepage-body-projects">
           <div className="homepage-body-projects-text">
-            <Link to="/projects#hackclt" className='projects-links'>Earnings Call Analysis: </Link>
+            <HashLink smooth to="/projects#hackclt" className='projects-links'>Earnings Call Analysis: </HashLink>
             <p>A web application for real-time sentiment analysis during an Earnings Call.</p>
           </div>
           <div className="homepage-body-projects-text">
-            <Link to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </Link>
+            <HashLink smooth to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </HashLink>
             <p>An autonomous delivery robot built in collaboration with UNC Charlotte's AI Research Club.</p>
           </div>
           <div className="homepage-body-projects-text">
-            <Link to="/projects#siteblocker" className='projects-links'>Site Blocker: </Link>
+            <HashLink smooth to="/projects#siteblocker" className='projects-links'>Site Blocker: </HashLink>
             <p>A browser extension that improves productivity by blocking distracting websites.</p>
           </div>
         </div>
