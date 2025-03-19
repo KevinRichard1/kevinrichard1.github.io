@@ -105,6 +105,10 @@ const Homepage = () => {
             <Link to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </Link>
             <p>An autonomous delivery robot built in collaboration with UNC Charlotte's AI Research Club.</p>
           </div>
+          <div className="homepage-body-projects-text">
+            <Link to="/projects#siteblocker" className='projects-links'>Site Blocker: </Link>
+            <p>A browser extension that improves productivity by blocking distracting websites.</p>
+          </div>
         </div>
         <hr />
       </div>

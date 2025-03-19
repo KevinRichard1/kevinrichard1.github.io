@@ -89,7 +89,8 @@
 }
 
 .siteblocker img{
-  width: 25%;
+  width: 10%;
+  margin-left: 4vw;
 }
 
 @media(max-width:1024px){
@@ -106,6 +107,14 @@
   }
 
   .deliveryrobot img{
+    margin-right: 2vw;
+  }
+
+  .siteblocker{
+    margin-left: 2vw;
+  }
+
+  .siteblocker img{
     margin-right: 2vw;
   }
 }
@@ -126,6 +135,14 @@
   .deliveryrobot img{
     margin-right: 2vw;
   }
+
+  .siteblocker{
+    margin-left: 2vw;
+  }
+
+  .siteblocker img{
+    margin-right: 2vw;
+  }
 }
 
 @media(max-width:480px){
@@ -133,6 +150,10 @@
     flex-direction: column;
     margin-right: 40px;
     margin-left: 5vw;
+  }
+
+  .hackclt-text{
+    width: 100%;
   }
 
   .hackclt ul li{
@@ -161,6 +182,26 @@
 
   .deliveryrobot img{
     width: 75%;
+    margin-left: 8vw;
+  }
+
+  .siteblocker{
+    margin-top: 0px;
+    margin-right: 40px;
+    flex-direction: column;
+    margin-left: 5vw;
+  }
+
+  .siteblocker-text{
+    width: 100%;
+  }
+
+  .siteblocker ul li{
+    margin-top: 15px;
+  }
+
+  .siteblocker img{
+    width: 25%;
     margin-left: 8vw;
   }
 }
