@@ -1,7 +1,7 @@
 .homepage {
   background-color: #234359;
   opacity: 1;
-  background-image:  radial-gradient(#cc9b4c 1.55px, transparent 1.55px), radial-gradient(#cc9b4c 1.55px, #234359 1.55px);
+  background-image:  radial-gradient(#cc9b4c .75px, transparent .75px), radial-gradient(#cc9b4c .75px, #234359 .75px);
   background-size: 62px 62px;
   background-position: 0 0,31px 31px;
   color: whitesmoke;
