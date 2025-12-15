@@ -57,31 +57,33 @@ const Homepage = () => {
         <h1>Hello World!</h1>
       </div>
       <div className='homepage-intro'>
-        <img src={profile} alt="" />
+        <img src={profile} alt="Kevin Richard - Computer Science Student" />
           <p>
           Hi! I’m Kevin Richard, a student at the University of North Carolina at Charlotte studying Computer Science, with a passion for machine learning and software development. I’ve worked on projects in a variety of fields where I’ve combined creativity and technical skills to solve real-world challenges.
           </p>
       </div>
       <div className="homepage-links">
-        <Link to="https://github.com/kevinRichard1/">
-          <img src={githubIcon} alt=""/>
+        <Link to="https://github.com/kevinRichard1/" aria-label="GitHub Profile">
+          <img src={githubIcon} alt="GitHub"/>
         </Link>
-        <Link to="https://www.linkedin.com/in/kevin-richard-cs/">
-          <img src={linkedinIcon} alt=""/>
+        <Link to="https://www.linkedin.com/in/kevin-richard-cs/" aria-label="LinkedIn Profile">
+          <img src={linkedinIcon} alt="LinkedIn"/>
         </Link>
       </div>
       <hr />
       <div className='homepage-body'>
         <h2>Skills</h2>
         <div className='homepage-body-skills'>
-          <div className="icons">
-            <img src={pythonIcon} alt="" />
-            <img src={javascriptIcon} alt="" />
-            <img src={javaIcon} alt="" />
-          </div>
-          <div className="names">
+          <div className="skill-item">
+            <img src={pythonIcon} alt="Python" />
             <p>Python</p>
+          </div>
+          <div className="skill-item">
+            <img src={javascriptIcon} alt="JavaScript" />
             <p>JavaScript</p>
+          </div>
+          <div className="skill-item">
+            <img src={javaIcon} alt="Java" />
             <p>Java</p>
           </div>
         </div>
