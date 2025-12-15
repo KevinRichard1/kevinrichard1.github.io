@@ -135,39 +135,6 @@
   transform: scale(1.05);
 }
 
-.reviewanalysis {
-
-}
-
-.reviewanalysis-text {
-
-}
-
-
-.raise {
-
-}
-
-.raise-text {
-
-}
-
-.hackclt {
-
-}
-
-.hackclt-text {
-
-}
-
-.deliveryrobot {
-
-}
-
-.deliveryrobot-text {
-
-}
-
 @media (max-width: 768px) {
   .project-section {
     flex-direction: column;
