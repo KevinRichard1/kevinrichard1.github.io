@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.da264d9e.css",
-    "main.js": "/static/js/main.3cecb536.js",
+    "main.js": "/static/js/main.a53b9246.js",
     "static/media/profile.jpg": "/static/media/profile.c6d050f689e7bab0cd12.jpg",
     "static/media/scoutmini.png": "/static/media/scoutmini.fd884cece2a822295bae.png",
     "static/media/hackclt24.jpg": "/static/media/hackclt24.c7bc7dc5b0eb2916d19d.jpg",
     "static/media/java-icon.png": "/static/media/java-icon.5ee60470d0569736baf6.png",
-    "static/media/cSharp-icon.png": "/static/media/cSharp-icon.2fb642b3f650f3e75f38.png",
     "static/media/github-icon.png": "/static/media/github-icon.d2fe757d71e0514debea.png",
     "static/media/python-icon.png": "/static/media/python-icon.1d156b5d2984e3844d91.png",
     "static/media/favicon.png": "/static/media/favicon.e5f6e60fcaa3120d19cf.png",
@@ -14,10 +13,10 @@
     "static/media/linkedin.png": "/static/media/linkedin.869deb105cbcb6280c6a.png",
     "index.html": "/index.html",
     "main.da264d9e.css.map": "/static/css/main.da264d9e.css.map",
-    "main.3cecb536.js.map": "/static/js/main.3cecb536.js.map"
+    "main.a53b9246.js.map": "/static/js/main.a53b9246.js.map"
   },
   "entrypoints": [
     "static/css/main.da264d9e.css",
-    "static/js/main.3cecb536.js"
+    "static/js/main.a53b9246.js"
   ]
 }
