@@ -99,16 +99,20 @@ const Homepage = () => {
         <h2>Projects</h2>
         <div className="homepage-body-projects">
           <div className="homepage-body-projects-text">
+            <HashLink smooth to="/projects#reviewanalysis" className='projects-links'>Product Review Analysis: </HashLink>
+            <p>Machine learning solution for product review analysis.</p>
+          </div>
+          <div className="homepage-body-projects-text">
+            <HashLink smooth to="/projects#raise" className='projects-links'>AI-Powered Grant Applications: </HashLink>
+            <p>RAISE is an AI powered grant matching and auto application platform that helps student organizations and nonprofits secure funding instantly.</p>
+          </div>
+          <div className="homepage-body-projects-text">
             <HashLink smooth to="/projects#hackclt" className='projects-links'>Earnings Call Analysis: </HashLink>
             <p>A web application for real-time sentiment analysis during an Earnings Call.</p>
           </div>
           <div className="homepage-body-projects-text">
             <HashLink smooth to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </HashLink>
             <p>An autonomous delivery robot built in collaboration with UNC Charlotte's AI Research Club.</p>
-          </div>
-          <div className="homepage-body-projects-text">
-            <HashLink smooth to="/projects#siteblocker" className='projects-links'>Site Blocker: </HashLink>
-            <p>A browser extension that improves productivity by blocking distracting websites.</p>
           </div>
         </div>
         <hr />

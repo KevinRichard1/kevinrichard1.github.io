@@ -1,8 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './CSS/Project.css'
-import hackclt24 from '../Components/Assets/hackclt24.jpg'
-import scoutmini from '../Components/Assets/scoutmini.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './CSS/Project.css';
+import scoutmini from '../Components/Assets/scoutmini.png';
+import hackclt24 from '../Components/Assets/hackclt24.jpg';
+import productanalysis from '../Components/Assets/productanalysis.png';
+import raise from '../Components/Assets/raise.png';
 
 const Project = () => { 
 
@@ -12,6 +14,30 @@ const Project = () => {
         <title>Kevin Richard's Projects</title>
       </head>
         <h1>Projects</h1>
+        <div id="reviewanalysis" className='reviewanalysis'>
+          <div className="reviewanalysis-text">
+            <Link to="https://github.com/KevinRichard1/ITCS-3156-FinalProject" className='projects-links'>Product Review Analysis 🔗</Link>
+            <ul>
+              <li>Built an end-to-end product review analysis pipeline using logistic regression for sentiment classification and an LSTM-based model to predict numerical product ratings from review text.</li>
+              <li>Implemented text preprocessing (tokenization, normalization, embeddings) and integrated both models to generate sentiment insights alongside rating predictions for each review.</li>
+              <li>Evaluated and optimized model performance using cross-validation and sequence modeling techniques, enabling scalable analysis of large volumes of customer feedback.</li>
+            </ul>
+          </div>
+          <img src={productanalysis} alt="" />
+        </div>
+        <hr />
+        <div id="raise" className='raise'>
+          <div className="raise-text">
+            <Link to="https://github.com/KevinRichard1/CCIHackathon2025" className='projects-links'>AI-Powered Grant Applications 🔗</Link>
+            <ul>
+              <li>Developed a KNN-based, Tinder-style matching system to align applicants with relevant opportunities by measuring similarity across qualifications, interests, and historical outcomes.</li>
+              <li>Built an agentic AI pipeline for automated grant application preparation and form completion, integrating retrieval-augmented generation (RAG) to produce grounded, context-aware outputs based on applicant profiles and supporting documents.</li>
+              <li>Implemented a human-in-the-loop oversight framework to review, refine, and approve AI-generated content, ensuring accuracy, compliance, and responsible use in high-stakes grant submissions.</li>
+            </ul>
+          </div>
+          <img src={raise} alt="" />
+        </div>
+        <hr />
         <div id="hackclt" className='hackclt'>
           <div className="hackclt-text">
             <Link to="https://github.com/TheBraveChicken4/EarningsReaderHackCLT" className='projects-links'>Earnings Call Analysis 🔗</Link>
@@ -35,18 +61,6 @@ const Project = () => {
           </div>
           <img src={scoutmini} alt="" />
         </div>
-        <hr />
-        <div id="siteblocker" className='siteblocker'>
-          <div className="siteblocker-text">
-            <Link to="https://github.com/KevinRichard1/site-blocker-extension" className='projects-links'>Site Blocker Extension 🔗</Link>
-            <ul>
-              <li>Developed a Chrome extension to block specific websites using HTML, CSS, and JavaScript, enhancing productivity and user focus.</li>
-              <li>Leveraged the Chrome Storage API to persist user preferences and settings, ensuring a personalized and seamless browsing experience.</li>
-              <li>Implemented efficient event handling and DOM manipulation to dynamically block and unblock websites in real time.</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
     </div>
   )
 }
