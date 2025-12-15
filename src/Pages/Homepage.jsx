@@ -6,7 +6,6 @@ import profile from '../Components/Assets/profile.jpg'
 import pythonIcon from '../Components/Assets/python-icon.png'
 import javaIcon from '../Components/Assets/java-icon.png'
 import javascriptIcon from '../Components/Assets/javascript-icon.png'
-import cSharpIcon from '../Components/Assets/cSharp-icon.png'
 import githubIcon from '../Components/Assets/github-icon.png'
 import linkedinIcon from '../Components/Assets/linkedin.png'
 
@@ -77,22 +76,23 @@ const Homepage = () => {
         <div className='homepage-body-skills'>
           <div className="icons">
             <img src={pythonIcon} alt="" />
-            <img src={javaIcon} alt="" />
             <img src={javascriptIcon} alt="" />
-            <img src={cSharpIcon} alt="" />
+            <img src={javaIcon} alt="" />
           </div>
           <div className="names">
             <p>Python</p>
-            <p>Java</p>
             <p>JavaScript</p>
-            <p>C#</p>
+            <p>Java</p>
           </div>
         </div>
         <div className="homepage-certs">
           <h3>Certifications:</h3>
           <ul>
+            <li>AWS Certified Machine Learning Engineer - Associate</li>
+            <li>AWS Certified Developer - Associate</li>
+            <li>AWS Certified Solutions Architect - Associate</li>
+            <li>AWS Certified AI Practitioner</li>
             <li>AWS Certified Cloud Practitioner</li>
-            <li>Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate</li>
           </ul>
         </div>
         <hr />
