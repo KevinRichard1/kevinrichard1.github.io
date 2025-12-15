@@ -14,8 +14,8 @@ const Project = () => {
         <title>Kevin Richard's Projects</title>
       </head>
         <h1>Projects</h1>
-        <div id="reviewanalysis" className='reviewanalysis'>
-          <div className="reviewanalysis-text">
+        <div id="reviewanalysis" className='project-section reviewanalysis'>
+          <div className="project-text reviewanalysis-text">
             <Link to="https://github.com/KevinRichard1/ITCS-3156-FinalProject" className='projects-links'>Product Review Analysis 🔗</Link>
             <ul>
               <li>Built an end-to-end product review analysis pipeline using logistic regression for sentiment classification and an LSTM-based model to predict numerical product ratings from review text.</li>
@@ -23,11 +23,13 @@ const Project = () => {
               <li>Evaluated and optimized model performance using cross-validation and sequence modeling techniques, enabling scalable analysis of large volumes of customer feedback.</li>
             </ul>
           </div>
-          <img src={productanalysis} alt="" />
+          <div className="project-image">
+            <img src={productanalysis} alt="Product Review Analysis Dashboard" />
+          </div>
         </div>
         <hr />
-        <div id="raise" className='raise'>
-          <div className="raise-text">
+        <div id="raise" className='project-section raise'>
+          <div className="project-text raise-text">
             <Link to="https://github.com/KevinRichard1/CCIHackathon2025" className='projects-links'>AI-Powered Grant Applications 🔗</Link>
             <ul>
               <li>Developed a KNN-based, Tinder-style matching system to align applicants with relevant opportunities by measuring similarity across qualifications, interests, and historical outcomes.</li>
@@ -35,11 +37,13 @@ const Project = () => {
               <li>Implemented a human-in-the-loop oversight framework to review, refine, and approve AI-generated content, ensuring accuracy, compliance, and responsible use in high-stakes grant submissions.</li>
             </ul>
           </div>
-          <img src={raise} alt="" />
+          <div className="project-image">
+            <img src={raise} alt="RAISE AI Grant Application Platform" />
+          </div>
         </div>
         <hr />
-        <div id="hackclt" className='hackclt'>
-          <div className="hackclt-text">
+        <div id="hackclt" className='project-section hackclt'>
+          <div className="project-text hackclt-text">
             <Link to="https://github.com/TheBraveChicken4/EarningsReaderHackCLT" className='projects-links'>Earnings Call Analysis 🔗</Link>
             <ul>
               <li>Won 1st place at Hack CLT 24, showcasing innovation in real-time financial data analysis.</li>
@@ -47,11 +51,13 @@ const Project = () => {
               <li>Automated API interactions with Python scripts, reducing API call frequency by more than 95% and significantly improving cost efficiency.</li>
             </ul>
           </div>
-          <img src={hackclt24} alt="" />
+          <div className="project-image">
+            <img src={hackclt24} alt="Hack CLT 24 First Place Winner - Earnings Call Analysis" />
+          </div>
         </div>
         <hr />
-        <div className="deliveryrobot" id="deliveryrobot">
-          <div className="deliveryrobot-text">
+        <div className="project-section deliveryrobot" id="deliveryrobot">
+          <div className="project-text deliveryrobot-text">
             <Link to="https://github.com/KevinRichard1/scout-sim" className='projects-links'>Autonomous Delivery Robot 🔗</Link>
             <ul>
               <li>Collaborated with the Charlotte AI Research club on the development of an autonomous delivery robot, integrating SLAM for precise navigation and environmental mapping using Nav2, Google Cartographer, and GazeboSim.</li>
@@ -59,7 +65,9 @@ const Project = () => {
               <li>Migrated AgileX Scout Mini codebase for ROS2 compatability.</li>
             </ul>
           </div>
-          <img src={scoutmini} alt="" />
+          <div className="project-image">
+            <img src={scoutmini} alt="AgileX Scout Mini Autonomous Delivery Robot" />
+          </div>
         </div>
     </div>
   )
