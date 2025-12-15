@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-primary);
+  background: var(--color-primary-light);
   padding: var(--space-8) var(--space-6);
   color: var(--color-text-inverse);
   border-top: 1px solid rgba(255, 255, 255, 0.1);

@@ -1,6 +1,6 @@
 :root {
   --color-primary: #1a365d;
-  --color-primary-light: #2d5a87;
+  --color-primary-light: #234359;
   --color-accent: #f6ad55;
   --color-accent-light: #fbd38d;
   
@@ -17,7 +17,9 @@
   --color-dark-surface: #1a202c;
   --color-dark-surface-secondary: #2d3748;
   
-  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
   
   --font-size-xs: 0.75rem;

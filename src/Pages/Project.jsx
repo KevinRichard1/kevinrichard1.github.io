@@ -13,6 +13,7 @@ const Project = () => {
       <head>
         <title>Kevin Richard's Projects</title>
       </head>
+      <div className='projects-content'>
         <h1>Projects</h1>
         <div id="reviewanalysis" className='project-section reviewanalysis'>
           <div className="project-text reviewanalysis-text">
@@ -69,6 +70,7 @@ const Project = () => {
             <img src={scoutmini} alt="AgileX Scout Mini Autonomous Delivery Robot" />
           </div>
         </div>
+      </div>
     </div>
   )
 }

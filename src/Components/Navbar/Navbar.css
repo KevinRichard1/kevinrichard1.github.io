@@ -1,5 +1,5 @@
 .navbar {
-  background: rgba(26, 54, 93, 0.95);
+  background: #234359;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
@@ -114,6 +114,10 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 0 var(--space-4);
+  }
+
+  .navbar img{
+    margin-left: 43vw;
   }
   
   .nav-menu {
