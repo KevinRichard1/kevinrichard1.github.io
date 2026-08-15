@@ -1,58 +1,104 @@
 import './Navbar.css';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../Assets/favicon.png';
 
 const Navbar = ({ setMenuStatus, isMenuOpen }) => {
-  const [menu, setMenu] = useState("home");
-  const [scrollDirection, setScrollDirection] = useState("up");
+  const [scrollDirection, setScrollDirection] = useState('up');
   const lastScrollTop = useRef(0);
-  const [menuOpen, setMenuOpen] = useState(isMenuOpen);
 
   const toggleMenu = () => {
-    setMenuOpen(prevState => !prevState);
-    setMenuStatus(prevState => !prevState);
+    setMenuStatus(!isMenuOpen);
   };
 
   const handleLogoClick = () => {
-    setMenu("home");
     setMenuStatus(false);
   };
 
   useEffect(() => {
-    setMenuOpen(isMenuOpen);
-  }, [isMenuOpen]);
-
-  useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > lastScrollTop.current) {
-        setScrollDirection("down");
+
+      if (currentScrollPos <= 0) {
+        setScrollDirection('up');
+      } else if (currentScrollPos > lastScrollTop.current) {
+        setScrollDirection('down');
       } else {
-        setScrollDirection("up");
+        setScrollDirection('up');
       }
-      lastScrollTop.current = currentScrollPos <= 0 ? 0 : currentScrollPos;
+
+      lastScrollTop.current = currentScrollPos;
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <div className={`navbar ${scrollDirection === "up" ? "show-navbar" : "hide-navbar"}`}>
-      <NavLink to="/" className='navbar-logo'>
-        <img src={logo} alt="" onClick={handleLogoClick} />
-      </NavLink>
-      <ul className="nav-menu">
-        <li onClick={() => { setMenu("home"); }}><NavLink style={{ textDecoration: 'none' }} to='/'>Home</NavLink>{menu === "home" ? <hr /> : <></>}</li>
-        <li onClick={() => { setMenu("projects"); }}><NavLink style={{ textDecoration: 'none' }} to='/projects'>Projects</NavLink>{menu === "projects" ? <hr /> : <></>}</li>
-      </ul>
-      <div className={`navbar-dropdown ${menuOpen ? 'change' : ''}`} onClick={toggleMenu}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
+    <nav
+      className={`navbar ${
+        scrollDirection === 'up' ? 'show-navbar' : 'hide-navbar'
+      }`}
+      aria-label="Main navigation"
+    >
+      <div className="navbar-inner">
+
+<div className="navbar-brand">
+  <NavLink
+    to="/"
+    className="navbar-logo"
+    onClick={handleLogoClick}
+    aria-label="Home"
+  >
+    <img src={logo} alt="" />
+  </NavLink>
+
+  <NavLink
+    to="/"
+    className="navbar-name"
+    onClick={handleLogoClick}
+  >
+    Kevin Richard
+  </NavLink>
+</div>
+        <ul className="nav-menu">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => isActive ? 'active' : ''}
+            >
+              Home
+            </NavLink>
+          </li>
+
+          <li>
+            <a href="/#research">Research</a>
+          </li>
+
+          <li>
+            <a href="/#education">Education</a>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          className={`navbar-dropdown ${
+            isMenuOpen ? 'change' : ''
+          }`}
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
+        >
+          <span className="bar1" />
+          <span className="bar2" />
+          <span className="bar3" />
+        </button>
+
       </div>
-    </div>
+    </nav>
   );
 };
 

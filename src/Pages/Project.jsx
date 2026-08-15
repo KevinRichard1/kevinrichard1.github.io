@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './CSS/Project.css';
-import scoutmini from '../Components/Assets/scoutmini.png';
-import hackclt24 from '../Components/Assets/hackclt24.jpg';
-import productanalysis from '../Components/Assets/productanalysis.png';
-import raise from '../Components/Assets/raise.png';
 
 const Project = () => { 
 
@@ -25,7 +21,6 @@ const Project = () => {
             </ul>
           </div>
           <div className="project-image">
-            <img src={productanalysis} alt="Product Review Analysis Dashboard" />
           </div>
         </div>
         <hr />
@@ -39,7 +34,6 @@ const Project = () => {
             </ul>
           </div>
           <div className="project-image">
-            <img src={raise} alt="RAISE AI Grant Application Platform" />
           </div>
         </div>
         <hr />
@@ -53,7 +47,6 @@ const Project = () => {
             </ul>
           </div>
           <div className="project-image">
-            <img src={hackclt24} alt="Hack CLT 24 First Place Winner - Earnings Call Analysis" />
           </div>
         </div>
         <hr />
@@ -67,7 +60,6 @@ const Project = () => {
             </ul>
           </div>
           <div className="project-image">
-            <img src={scoutmini} alt="AgileX Scout Mini Autonomous Delivery Robot" />
           </div>
         </div>
       </div>
