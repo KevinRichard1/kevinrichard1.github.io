@@ -8,22 +8,41 @@ const Sidebar = ({ isOpen, setMenuStatus }) => {
   };
 
   return (
-    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-      <nav>
+    <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <nav aria-label="Mobile navigation">
         <ul>
           <li>
-            <NavLink style={{ textDecoration: 'none' }} to="/" onClick={handleLinkClick}>
+            <NavLink
+              to="/"
+              onClick={handleLinkClick}
+              className={({ isActive }) =>
+                isActive ? 'active' : ''
+              }
+            >
               Home
             </NavLink>
           </li>
+
           <li>
-            <NavLink style={{ textDecoration: 'none' }} to="/projects" onClick={handleLinkClick}>
-              Projects
-            </NavLink>
+            <a
+              href="/#research"
+              onClick={handleLinkClick}
+            >
+              Research
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/#education"
+              onClick={handleLinkClick}
+            >
+              Education
+            </a>
           </li>
         </ul>
       </nav>
-    </div>
+    </aside>
   );
 };
 

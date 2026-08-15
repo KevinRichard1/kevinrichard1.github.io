@@ -1,126 +1,158 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
-import './CSS/Homepage.css'
-import profile from '../Components/Assets/profile.jpg'
-import pythonIcon from '../Components/Assets/python-icon.png'
-import javaIcon from '../Components/Assets/java-icon.png'
-import javascriptIcon from '../Components/Assets/javascript-icon.png'
-import githubIcon from '../Components/Assets/github-icon.png'
-import linkedinIcon from '../Components/Assets/linkedin.png'
+import React from 'react';
+import './CSS/Homepage.css';
+import profile from '../Components/Assets/profile.jpg';
 
 const Homepage = () => {
-
-  const handleIntersection = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');
-      }
-    });
-  };
-
-  useEffect(() => {
-    const options = { threshold: 0.92 };
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    const skillsElement = document.querySelector('.homepage-body-skills');
-    const certElement = document.querySelector('.homepage-certs');
-    const projectsElement = document.querySelector('.homepage-body-projects');
-
-    if (skillsElement) observer.observe(skillsElement);
-    if (certElement) observer.observe(certElement);
-    if (projectsElement) observer.observe(projectsElement);
-
-    return () => {
-      if (skillsElement) observer.unobserve(skillsElement);
-      if (certElement) observer.unobserve(certElement);
-      if (projectsElement) observer.unobserve(projectsElement);
-    };
-  }, []);
-
-
-  // Scroll to top of screen
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-  });
-
   return (
-    <div className='homepage'>
-      <head>
-        <title>Kevin Richard's Portfolio</title>
-      </head>
-      <div className="homepage-title">
-        <h1>Hello World!</h1>
-      </div>
-      <div className='homepage-intro'>
-        <img src={profile} alt="Kevin Richard - Computer Science Student" />
-          <p>
-          Hi! I’m Kevin Richard, a student at the University of North Carolina at Charlotte studying Computer Science, with a passion for machine learning and software development. I’ve worked on projects in a variety of fields where I’ve combined creativity and technical skills to solve real-world challenges.
-          </p>
-      </div>
-      <div className="homepage-links">
-        <Link to="https://github.com/kevinRichard1/" aria-label="GitHub Profile">
-          <img src={githubIcon} alt="GitHub"/>
-        </Link>
-        <Link to="https://www.linkedin.com/in/kevin-richard-cs/" aria-label="LinkedIn Profile">
-          <img src={linkedinIcon} alt="LinkedIn"/>
-        </Link>
-      </div>
-      <hr />
-      <div className='homepage-body'>
-        <h2>Skills</h2>
-        <div className='homepage-body-skills'>
-          <div className="skill-item">
-            <img src={pythonIcon} alt="Python" />
-            <p>Python</p>
+    <main className="homepage">
+      <section className="homepage-hero">
+        <div className="homepage-container homepage-hero-content">
+          <div className="homepage-profile">
+            <img
+              src={profile}
+              alt="Kevin Richard"
+            />
           </div>
-          <div className="skill-item">
-            <img src={javascriptIcon} alt="JavaScript" />
-            <p>JavaScript</p>
-          </div>
-          <div className="skill-item">
-            <img src={javaIcon} alt="Java" />
-            <p>Java</p>
-          </div>
-        </div>
-        <div className="homepage-certs">
-          <h3>Certifications:</h3>
-          <ul>
-            <li>AWS Certified Machine Learning Engineer - Associate</li>
-            <li>AWS Certified Developer - Associate</li>
-            <li>AWS Certified Solutions Architect - Associate</li>
-            <li>AWS Certified AI Practitioner</li>
-            <li>AWS Certified Cloud Practitioner</li>
-          </ul>
-        </div>
-        <hr />
-        <h2>Projects</h2>
-        <div className="homepage-body-projects">
-          <div className="homepage-body-projects-text">
-            <HashLink smooth to="/projects#reviewanalysis" className='projects-links'>Product Review Analysis: </HashLink>
-            <p>Machine learning solution for product review analysis.</p>
-          </div>
-          <div className="homepage-body-projects-text">
-            <HashLink smooth to="/projects#raise" className='projects-links'>AI-Powered Grant Applications: </HashLink>
-            <p>RAISE is an AI powered grant matching and auto application platform that helps student organizations and nonprofits secure funding instantly.</p>
-          </div>
-          <div className="homepage-body-projects-text">
-            <HashLink smooth to="/projects#hackclt" className='projects-links'>Earnings Call Analysis: </HashLink>
-            <p>A web application for real-time sentiment analysis during an Earnings Call.</p>
-          </div>
-          <div className="homepage-body-projects-text">
-            <HashLink smooth to="/projects#deliveryrobot" className='projects-links'>Autonomous Delivery Robot: </HashLink>
-            <p>An autonomous delivery robot built in collaboration with UNC Charlotte's AI Research Club.</p>
-          </div>
-        </div>
-        <hr />
-      </div>
-    </div>
-  )
-}
 
-export default Homepage
+          <div className="homepage-introduction">
+            <h1>Kevin Richard</h1>
+
+            <p className="homepage-degree">
+              M.S. Computer Science Student
+            </p>
+
+            <p className="homepage-intro">
+My research focuses on multimodal AI and embodied intelligence. I am interested in developing foundation models that can understand and interact with the world across different modalities and environments.
+            </p>
+
+            <nav
+              className="homepage-links"
+              aria-label="Professional links"
+            >
+              <a href="mailto:krich103@charlotte.edu">
+                Email
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?hl=en&user=FZel4xUAAAAJ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Scholar
+              </a>
+
+              <a
+                href="https://github.com/kevinRichard1/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/kevin-richard-cs/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <div className="homepage-container">
+        <div className="homepage-rule" />
+
+        <section
+          id="research"
+          className="homepage-section homepage-research"
+        >
+          <div className="homepage-section-label">
+            <span>01</span>
+            <span>Research</span>
+          </div>
+
+          <div className="homepage-section-content">
+            <h2>Research &amp; Publication</h2>
+
+            <article className="paper">
+              <p className="paper-venue">
+                DriveX @ CVPR · 2026
+              </p>
+
+              <h3>D2-V2X: Depth-Driven Cooperative V2X Reasoning for Autonomous Driving</h3>
+
+              <p className="paper-authors">
+                Kevin Richard, Alphin Varghese, Colin Pham, David Oh, Srijan Das
+              </p>
+
+              <p className="paper-description">
+		We introduce D2-V2X, a spatially-aware benchmark and baseline for cooperative autonomous driving. By integrating V2X LiDAR with Chain-of-Thought rationales, we enable VLMs to reason about occluded hazards.
+              </p>
+
+              <div className="paper-links">
+                <a
+                  href="https://arxiv.org/abs/2605.24098"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Paper
+                </a>
+
+                <a
+                  href="https://github.com/KevinRichard1/D2-V2X"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div className="homepage-rule" />
+
+        <section
+          id="education"
+          className="homepage-section homepage-education"
+        >
+          <div className="homepage-section-label">
+            <span>02</span>
+            <span>Education</span>
+          </div>
+
+          <div className="homepage-section-content">
+            <h2>Education</h2>
+
+            <div className="education-list">
+		<article className="education-item">
+		  <div>
+		    <h3>M.S. in Computer Science</h3>
+		    <p>University of North Carolina at Charlotte</p>
+		  </div>
+
+		  <span>2026–Present</span>
+		</article>
+
+		<article className="education-item">
+		  <div>
+		    <h3>B.S. in Computer Science, Honors</h3>
+		    <p>University of North Carolina at Charlotte</p>
+		  </div>
+
+		  <span>2024-2026</span>
+		</article>
+            </div>
+          </div>
+        </section>
+
+        <div className="homepage-rule" />
+
+      </div>
+    </main>
+  );
+};
+
+export default Homepage;
