@@ -21,7 +21,7 @@
 -------------------------------- */
 
 .homepage-hero {
-  padding: calc(var(--navbar-height) + 5.5rem) 0 5.5rem;
+  padding: calc(var(--navbar-height) + 5.5rem) 0 3.5rem;
 }
 
 .homepage-hero-content {
@@ -92,7 +92,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: var(--space-5);
-  margin-top: var(--space-7);
+  margin-top: var(--space-10);
 }
 
 .homepage-introduction {
@@ -122,6 +122,44 @@
 .paper-links a:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
+}
+
+.homepage-link {
+  position: relative;
+}
+
+.hover-label-trigger {
+  display: inline-flex;
+}
+
+.hover-label {
+  position: fixed;
+  z-index: 1000;
+
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+
+  background: var(--color-navy);
+  color: var(--color-background);
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.hover-label.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* --------------------------------

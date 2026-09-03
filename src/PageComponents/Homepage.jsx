@@ -1,10 +1,9 @@
 import React from 'react';
-import './CSS/Homepage.css';
-import profile from '../Components/Assets/profile.jpg';
 import { IconMail } from '@tabler/icons-react';
 import { IconBook2 } from '@tabler/icons-react';
 import { IconBrandGithub } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
+import HoverLabel from '../Components/HoverLabel/HoverLabel';
 
 const Homepage = () => {
   return (
@@ -13,7 +12,7 @@ const Homepage = () => {
         <div className="homepage-container homepage-hero-content">
           <div className="homepage-profile">
             <img
-              src={profile}
+              src="/images/profile.jpg"
               alt="Kevin Richard"
             />
           </div>
@@ -33,38 +32,51 @@ My research focuses on multimodal AI and embodied intelligence. I am interested 
               className="homepage-links"
               aria-label="Professional links"
             >
-              <a href="mailto:krich103@charlotte.edu"
-                aria-label="Email Kevin Richard"
-              >
-                <IconMail stroke={1.5} />
-              </a>
+              <HoverLabel label="Email">
+                <a
+                  href="mailto:krich103@charlotte.edu"
+                  aria-label="Email"
+                  className="homepage-link"
+                >
+                  <IconMail stroke={1.5} />
+                </a>
+              </HoverLabel>
 
-              <a
-                href="https://scholar.google.com/citations?hl=en&user=FZel4xUAAAAJ"
-                target="_blank"
-                rel="noreferrer"
+              <HoverLabel label="Google Scholar">
+                <a
+                  href="https://scholar.google.com/citations?hl=en&user=FZel4xUAAAAJ"
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="Google Scholar"
-              >
-                <IconBook2 stroke={1.5} />
-              </a>
+                  className="homepage-link"
+                >
+                  <IconBook2 stroke={1.5} />
+                </a>
+              </HoverLabel>
 
-              <a
-                href="https://github.com/kevinRichard1/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
-                <IconBrandGithub stroke={1.5} />
-              </a>
+              <HoverLabel label="GitHub">
+                <a
+                  href="https://github.com/kevinRichard1/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  className="homepage-link"
+                >
+                  <IconBrandGithub stroke={1.5} />
+                </a>
+              </HoverLabel>
 
-              <a
-                href="https://www.linkedin.com/in/kevin-richard-cs/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <IconBrandLinkedin stroke={1.5} />
-              </a>
+              <HoverLabel label="LinkedIn">
+                <a
+                  href="https://www.linkedin.com/in/kevin-richard-cs/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="homepage-link"
+                >
+                  <IconBrandLinkedin stroke={1.5} />
+                </a>
+              </HoverLabel>
             </nav>
           </div>
         </div>
@@ -83,7 +95,7 @@ My research focuses on multimodal AI and embodied intelligence. I am interested 
           </div>
 
           <div className="homepage-section-content">
-            <h2>Research &amp; Publication</h2>
+            <h2>Research &amp; Publications</h2>
 
             <article className="paper">
               <p className="paper-venue">

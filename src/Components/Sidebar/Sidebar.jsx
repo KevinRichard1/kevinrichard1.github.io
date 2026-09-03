@@ -1,6 +1,7 @@
+'use client';
+
 import React from 'react';
-import './Sidebar.css';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
 
 const Sidebar = ({ isOpen, setMenuStatus }) => {
   const handleLinkClick = () => {
@@ -12,33 +13,30 @@ const Sidebar = ({ isOpen, setMenuStatus }) => {
       <nav aria-label="Mobile navigation">
         <ul>
           <li>
-            <NavLink
-              to="/"
+            <Link
+              href="/"
               onClick={handleLinkClick}
-              className={({ isActive }) =>
-                isActive ? 'active' : ''
-              }
             >
               Home
-            </NavLink>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               href="/#research"
               onClick={handleLinkClick}
             >
               Research
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               href="/#education"
               onClick={handleLinkClick}
             >
               Education
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
