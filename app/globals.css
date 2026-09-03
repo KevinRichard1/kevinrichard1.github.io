@@ -1,4 +1,8 @@
-@import './styles/design-tokens.css';
+@import '../src/styles/design-tokens.css';
+@import './Homepage.css';
+@import '../src/Components/Navbar/Navbar.css';
+@import '../src/Components/Sidebar/Sidebar.css';
+@import '../src/Components/Footer/Footer.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -51,7 +55,8 @@ a {
   transition: color var(--transition-fast);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--color-accent-light);
   text-decoration: underline;
 }

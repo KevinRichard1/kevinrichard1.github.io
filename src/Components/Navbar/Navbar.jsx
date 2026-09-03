@@ -1,7 +1,7 @@
-import './Navbar.css';
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../Assets/favicon.png';
+import Link from 'next/link';
 
 const Navbar = ({ setMenuStatus, isMenuOpen }) => {
   const [scrollDirection, setScrollDirection] = useState('up');
@@ -46,40 +46,35 @@ const Navbar = ({ setMenuStatus, isMenuOpen }) => {
     >
       <div className="navbar-inner">
 
-<div className="navbar-brand">
-  <NavLink
-    to="/"
-    className="navbar-logo"
-    onClick={handleLogoClick}
-    aria-label="Home"
-  >
-    <img src={logo} alt="" />
-  </NavLink>
+        <div className="navbar-brand">
+          <Link
+            href="/"
+            className="navbar-logo"
+            onClick={handleLogoClick}
+            aria-label="Home"
+          >
+            <img src="/images/favicon.png" alt="" />
+          </Link>
 
-  <NavLink
-    to="/"
-    className="navbar-name"
-    onClick={handleLogoClick}
-  >
-    Kevin Richard
-  </NavLink>
-</div>
+          <Link
+            href="/"
+            className="navbar-name"
+            onClick={handleLogoClick}
+          >
+            Kevin Richard
+          </Link>
+        </div>
         <ul className="nav-menu">
           <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => isActive ? 'active' : ''}
-            >
-              Home
-            </NavLink>
+            <Link href="/">Home</Link>
           </li>
 
           <li>
-            <a href="/#research">Research</a>
+            <Link href="/#research">Research</Link>
           </li>
 
           <li>
-            <a href="/#education">Education</a>
+            <Link href="/#education">Education</Link>
           </li>
         </ul>
 
