@@ -1,6 +1,10 @@
 import React from 'react';
 import './CSS/Homepage.css';
 import profile from '../Components/Assets/profile.jpg';
+import { IconMail } from '@tabler/icons-react';
+import { IconBook2 } from '@tabler/icons-react';
+import { IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandLinkedin } from '@tabler/icons-react';
 
 const Homepage = () => {
   return (
@@ -29,32 +33,37 @@ My research focuses on multimodal AI and embodied intelligence. I am interested 
               className="homepage-links"
               aria-label="Professional links"
             >
-              <a href="mailto:krich103@charlotte.edu">
-                Email
+              <a href="mailto:krich103@charlotte.edu"
+                aria-label="Email Kevin Richard"
+              >
+                <IconMail stroke={1.5} />
               </a>
 
               <a
                 href="https://scholar.google.com/citations?hl=en&user=FZel4xUAAAAJ"
                 target="_blank"
                 rel="noreferrer"
+                  aria-label="Google Scholar"
               >
-                Google Scholar
+                <IconBook2 stroke={1.5} />
               </a>
 
               <a
                 href="https://github.com/kevinRichard1/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="GitHub"
               >
-                GitHub
+                <IconBrandGithub stroke={1.5} />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/kevin-richard-cs/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="LinkedIn"
               >
-                LinkedIn
+                <IconBrandLinkedin stroke={1.5} />
               </a>
             </nav>
           </div>
@@ -84,7 +93,7 @@ My research focuses on multimodal AI and embodied intelligence. I am interested 
               <h3>D2-V2X: Depth-Driven Cooperative V2X Reasoning for Autonomous Driving</h3>
 
               <p className="paper-authors">
-                Kevin Richard, Alphin Varghese, Colin Pham, David Oh, Srijan Das
+                <strong>Kevin Richard</strong>, Alphin Varghese, Colin Pham, David Oh, Srijan Das
               </p>
 
               <p className="paper-description">
@@ -133,7 +142,7 @@ My research focuses on multimodal AI and embodied intelligence. I am interested 
 		    <p>University of North Carolina at Charlotte</p>
 		  </div>
 
-		  <span>2026–Present</span>
+		  <span>2026–Present <em>Expected May 2027</em></span>
 		</article>
 
 		<article className="education-item">
